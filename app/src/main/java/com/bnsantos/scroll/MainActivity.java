@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.customScrollButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+                Intent intent = new Intent(MainActivity.this, MyScrollingActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });
         findViewById(R.id.ultimateScrollButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+                Intent intent = new Intent(MainActivity.this, UltimateRecyclerViewActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });

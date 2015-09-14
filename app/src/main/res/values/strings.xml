@@ -8,6 +8,7 @@
     <string name="ultimate_scroll">Ultimate Scroll</string>
     <string name="refresh">Refresh</string>
     <string name="error">Error</string>
+    <string name="list_bottom">Reached Bottom</string>
 
     <string-array name="countries">
         <item>Afghanistan</item>
