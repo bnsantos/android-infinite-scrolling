@@ -15,6 +15,9 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
+import rx.subscriptions.CompositeSubscription;
+
+import static rx.android.app.AppObservable.bindActivity;
 
 /**
  * Created by bruno on 14/09/15.
@@ -37,6 +40,8 @@ public class ScrollingActivity extends AppCompatActivity {
         mProvider = new Provider(Arrays.asList(getResources().getStringArray(R.array.countries)));
         initViews();
         initAdapter();
+        bindActivity(this, null);
+        //CompositeSubscription
     }
 
     protected void initViews(){}
